@@ -3,7 +3,7 @@ require: slotfilling/slotFilling.sc
 theme: /cinema
 
     state: Start
-        q!: $regex</start>
+        q!: *start
         a: Для запуска бота напишите "привет"
 
     state: Hello
@@ -13,6 +13,11 @@ theme: /cinema
         
         state: /cinema/Help
             a: Вот, чем я могу Вам помочь:
+                Расписание фильмов/
+                Цена/
+                Количество залов/
+                Время работы кафе/
+        
 
 
     state: Bye
