@@ -4,11 +4,16 @@ theme: /cinema
 
     state: Start
         q!: $regex</start>
-        a: Для запуска бота напишите "начать"
+        a: Для запуска бота напишите "привет"
 
     state: Hello
         intent!: /привет
-        a: Привет привет
+        a: Здравствуйте. Я кинобот
+        go!: /cinema/Help
+        
+        state: /cinema/Help
+            a: Вот, чем я могу Вам помочь:
+
 
     state: Bye
         intent!: /пока
