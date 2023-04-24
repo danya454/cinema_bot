@@ -1,10 +1,10 @@
 require: slotfilling/slotFilling.sc
   module = sys.zb-common
-theme: /
+theme: /cinema
 
     state: Start
         q!: $regex</start>
-        a: Начнём.
+        a: Для запуска бота напишите "начать"
 
     state: Hello
         intent!: /привет
